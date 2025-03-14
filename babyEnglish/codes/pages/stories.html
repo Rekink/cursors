@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宝贝英语 - 儿歌故事</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container bg-gradient-to-b from-green-50 to-white">
+        <!-- 顶部导航 -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold text-green-700">儿歌故事</h1>
+            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                <i class="fas fa-bookmark text-green-500 text-sm"></i>
+            </div>
+        </div>
+
+        <!-- 搜索栏 -->
+        <div class="flex items-center justify-between rounded-card p-2 mb-4 bg-white">
+            <div class="flex items-center flex-grow">
+                <i class="fas fa-search text-gray-400 mr-2 text-sm"></i>
+                <input type="text" placeholder="搜索儿歌或故事" class="bg-transparent border-none outline-none text-xs w-full">
+            </div>
+            <button class="text-xs bg-green-500 text-white px-2 py-0.5 rounded-full">搜索</button>
+        </div>
+
+        <!-- 继续阅读 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">继续阅读</h2>
+        
+        <div class="rounded-card overflow-hidden relative mb-4">
+            <img src="https://images.unsplash.com/photo-1577034025924-33fb5a9d08eb?q=80&w=400" alt="小猪三兄弟" class="w-full h-32 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-green-900 to-transparent opacity-70"></div>
+            <div class="absolute bottom-0 left-0 p-3 text-white">
+                <div class="flex items-center mb-1">
+                    <span class="bg-green-500 text-xs text-white px-2 py-0.5 rounded-full mr-2">故事</span>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-300 text-xs"></i>
+                        <i class="fas fa-star text-yellow-300 text-xs"></i>
+                        <i class="fas fa-star text-yellow-300 text-xs"></i>
+                        <i class="fas fa-star text-gray-300 text-xs"></i>
+                        <i class="fas fa-star text-gray-300 text-xs"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-base">小猪三兄弟</h3>
+                <div class="flex items-center justify-between">
+                    <p class="text-xs">上次播放到 2:45</p>
+                    <button class="bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类栏 -->
+        <div class="flex items-center space-x-2 mb-4 overflow-x-auto py-1 scrollbar-hidden">
+            <div class="category-pill active">
+                <span>全部</span>
+            </div>
+            <div class="category-pill">
+                <span>儿歌</span>
+            </div>
+            <div class="category-pill">
+                <span>故事</span>
+            </div>
+            <div class="category-pill">
+                <span>动物</span>
+            </div>
+            <div class="category-pill">
+                <span>食物</span>
+            </div>
+            <div class="category-pill">
+                <span>家庭</span>
+            </div>
+            <div class="category-pill">
+                <span>颜色</span>
+            </div>
+        </div>
+
+        <!-- 推荐儿歌 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">热门儿歌</h2>
+        
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1526297003708-f5a1c2c9c6e7?q=80&w=200" alt="Twinkle Twinkle" class="w-full h-24 object-cover">
+                    <div class="absolute top-2 right-2 bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-sm">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </div>
+                    <span class="absolute bottom-2 left-2 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded-full">儿歌</span>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-medium text-gray-800 text-xs mb-0.5">Twinkle Little Star</h3>
+                    <p class="text-xs text-gray-500">一闪一闪亮晶晶</p>
+                    <div class="flex mt-1 items-center">
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-gray-300 text-xs"></i>
+                        <span class="ml-1 text-xs text-gray-500">1:45</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1488381397757-59d6261610f4?q=80&w=200" alt="ABC Song" class="w-full h-24 object-cover">
+                    <div class="absolute top-2 right-2 bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-sm">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </div>
+                    <span class="absolute bottom-2 left-2 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded-full">儿歌</span>
+                </div>
+                <div class="p-2">
+                    <h3 class="font-medium text-gray-800 text-xs mb-0.5">ABC Song</h3>
+                    <p class="text-xs text-gray-500">英文字母歌</p>
+                    <div class="flex mt-1 items-center">
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-gray-300 text-xs mr-0.5"></i>
+                        <i class="fas fa-star text-gray-300 text-xs"></i>
+                        <span class="ml-1 text-xs text-gray-500">2:10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门故事 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">经典故事</h2>
+        
+        <div class="space-y-3 mb-16">
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1516478378239-ad85055ee3c6?q=80&w=200" alt="红帽子" class="w-full h-full object-cover">
+                    <div class="absolute bottom-1 right-1 bg-white rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-gray-800 text-xs">小红帽</h3>
+                            <p class="text-xs text-gray-500">会讲英语的小红帽</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-1.5 py-0.5 rounded-full">故事</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-1">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                        </div>
+                        <span class="text-xs text-gray-500">3:15</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1504317079092-84ae51d209f4?q=80&w=200" alt="三只小熊" class="w-full h-full object-cover">
+                    <div class="absolute bottom-1 right-1 bg-white rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-gray-800 text-xs">三只小熊</h3>
+                            <p class="text-xs text-gray-500">Goldilocks and Three Bears</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-1.5 py-0.5 rounded-full">故事</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-1">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                        </div>
+                        <span class="text-xs text-gray-500">4:20</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1481450112092-0b4b68925eb4?q=80&w=200" alt="Jack and Beanstalk" class="w-full h-full object-cover">
+                    <div class="absolute bottom-1 right-1 bg-white rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+                        <i class="fas fa-play text-green-600 text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-gray-800 text-xs">杰克与魔豆</h3>
+                            <p class="text-xs text-gray-500">Jack and the Beanstalk</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-1.5 py-0.5 rounded-full">故事</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-1">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                        </div>
+                        <span class="text-xs text-gray-500">5:45</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="nav-container">
+            <div class="nav-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); width: 100%;">
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-book nav-icon"></i>
+                    <span>单词</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-gamepad nav-icon"></i>
+                    <span>游戏</span>
+                </div>
+                <div class="nav-item active" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-music nav-icon"></i>
+                    <span>儿歌</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

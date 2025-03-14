@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宝贝英语 - 互动游戏</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container bg-gradient-to-b from-purple-50 to-white">
+        <!-- 顶部导航 -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold text-purple-700">互动游戏</h1>
+            <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                <i class="fas fa-trophy text-purple-500 text-sm"></i>
+            </div>
+        </div>
+
+        <!-- 游戏成就展示 -->
+        <div class="rounded-card p-3 mb-4 bg-white">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-base font-semibold text-gray-800">我的游戏成就</h2>
+                <span class="text-xs text-purple-600 font-medium">查看全部</span>
+            </div>
+            
+            <div class="flex justify-around">
+                <div class="flex flex-col items-center">
+                    <div class="badge bg-yellow-400 mb-1">
+                        <i class="fas fa-star text-white"></i>
+                    </div>
+                    <span class="text-xs text-gray-700">12</span>
+                    <span class="text-xs text-gray-500">星星</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="badge bg-blue-400 mb-1">
+                        <i class="fas fa-medal text-white"></i>
+                    </div>
+                    <span class="text-xs text-gray-700">5</span>
+                    <span class="text-xs text-gray-500">奖牌</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="badge bg-green-400 mb-1">
+                        <i class="fas fa-award text-white"></i>
+                    </div>
+                    <span class="text-xs text-gray-700">3</span>
+                    <span class="text-xs text-gray-500">徽章</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐游戏 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">推荐游戏</h2>
+        
+        <div class="rounded-card overflow-hidden relative mb-4 h-32">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=400" alt="单词配对" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-purple-900 to-transparent opacity-60"></div>
+            <div class="absolute bottom-0 left-0 p-3 text-white">
+                <h3 class="font-bold text-base">单词配对</h3>
+                <p class="text-xs">将单词与图片正确匹配</p>
+                <div class="flex items-center mt-1">
+                    <i class="fas fa-star text-yellow-300 mr-1 text-xs"></i>
+                    <i class="fas fa-star text-yellow-300 mr-1 text-xs"></i>
+                    <i class="fas fa-star text-yellow-300 mr-1 text-xs"></i>
+                    <i class="fas fa-star text-yellow-300 mr-1 text-xs"></i>
+                    <i class="fas fa-star text-gray-400 text-xs"></i>
+                    <span class="ml-1 text-xs">简单</span>
+                </div>
+            </div>
+            <div class="absolute top-3 right-3 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg">
+                <i class="fas fa-play text-purple-600 text-xs"></i>
+            </div>
+        </div>
+
+        <!-- 游戏分类 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">游戏分类</h2>
+        
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="bg-pink-100 p-2 flex justify-between items-center">
+                    <h3 class="font-medium text-pink-800 text-xs">记忆游戏</h3>
+                    <div class="bg-pink-500 rounded-full w-5 h-5 flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <p class="text-xs text-gray-500 mb-1">锻炼记忆力和单词认知</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-700">3个游戏</span>
+                        <button class="bg-pink-500 text-white text-xs px-2 py-0.5 rounded-full">开始</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="bg-blue-100 p-2 flex justify-between items-center">
+                    <h3 class="font-medium text-blue-800 text-xs">发音游戏</h3>
+                    <div class="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                        <i class="fas fa-volume-up text-white text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <p class="text-xs text-gray-500 mb-1">通过听力学习正确发音</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-700">4个游戏</span>
+                        <button class="bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">开始</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="bg-green-100 p-2 flex justify-between items-center">
+                    <h3 class="font-medium text-green-800 text-xs">拼写游戏</h3>
+                    <div class="bg-green-500 rounded-full w-5 h-5 flex items-center justify-center">
+                        <i class="fas fa-pencil-alt text-white text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <p class="text-xs text-gray-500 mb-1">学习简单单词的拼写</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-700">2个游戏</span>
+                        <button class="bg-green-500 text-white text-xs px-2 py-0.5 rounded-full">开始</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden">
+                <div class="bg-yellow-100 p-2 flex justify-between items-center">
+                    <h3 class="font-medium text-yellow-800 text-xs">互动游戏</h3>
+                    <div class="bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-white text-xs"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <p class="text-xs text-gray-500 mb-1">趣味互动学习英语</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-700">5个游戏</span>
+                        <button class="bg-yellow-500 text-white text-xs px-2 py-0.5 rounded-full">开始</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 游戏列表 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">热门游戏</h2>
+        
+        <div class="space-y-3 mb-16">
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1560252889-bccf66e2b368?q=80&w=200" alt="动物找找" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 flex-grow">
+                    <h3 class="font-medium text-gray-800 text-xs">动物找找</h3>
+                    <p class="text-xs text-gray-500 mb-1">在图片中找出特定动物</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                        </div>
+                        <button class="bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full">玩一玩</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1517697471339-4aa32003c11a?q=80&w=200" alt="气球单词" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 flex-grow">
+                    <h3 class="font-medium text-gray-800 text-xs">气球单词</h3>
+                    <p class="text-xs text-gray-500 mb-1">点击朗读正确的单词气球</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-gray-300 text-xs"></i>
+                        </div>
+                        <button class="bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full">玩一玩</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-20 h-20 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1567204452919-b0274c369acd?q=80&w=200" alt="水果配对" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 flex-grow">
+                    <h3 class="font-medium text-gray-800 text-xs">水果配对</h3>
+                    <p class="text-xs text-gray-500 mb-1">将水果单词与图片配对</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs mr-0.5"></i>
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                        </div>
+                        <button class="bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full">玩一玩</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="nav-container">
+            <div class="nav-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); width: 100%;">
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-book nav-icon"></i>
+                    <span>单词</span>
+                </div>
+                <div class="nav-item active" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-gamepad nav-icon"></i>
+                    <span>游戏</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-music nav-icon"></i>
+                    <span>儿歌</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

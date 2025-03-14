@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宝贝英语 - 单词学习</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container bg-gradient-to-b from-indigo-50 to-white">
+        <!-- 顶部导航 -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold text-indigo-700">单词学习</h1>
+            <div class="flex space-x-2">
+                <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-search text-pink-500 text-sm"></i>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center">
+                    <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习模式选择 -->
+        <div class="flex space-x-3 mb-4 overflow-x-auto pb-2">
+            <div class="rounded-full bg-indigo-500 text-white px-3 py-1 text-xs font-medium whitespace-nowrap">
+                所有单词
+            </div>
+            <div class="rounded-full bg-white text-gray-700 px-3 py-1 text-xs font-medium whitespace-nowrap shadow">
+                已学单词
+            </div>
+            <div class="rounded-full bg-white text-gray-700 px-3 py-1 text-xs font-medium whitespace-nowrap shadow">
+                收藏单词
+            </div>
+            <div class="rounded-full bg-white text-gray-700 px-3 py-1 text-xs font-medium whitespace-nowrap shadow">
+                难记单词
+            </div>
+        </div>
+
+        <!-- 单词进度卡片 -->
+        <div class="rounded-card p-3 mb-4 bg-white">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-base font-semibold text-gray-800">本周进度</h2>
+                <span class="text-xs text-indigo-600 font-medium">14/50</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 28%;"></div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">继续努力，再学习36个单词就能完成本周目标啦！</p>
+        </div>
+
+        <!-- 单词分类 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">单词主题</h2>
+        
+        <div class="grid grid-cols-2 gap-3 mb-5">
+            <div class="rounded-card overflow-hidden relative h-28">
+                <img src="https://images.unsplash.com/photo-1577373995753-cb0e48e57809?q=80&w=320" alt="动物" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-indigo-900 to-transparent opacity-70"></div>
+                <div class="absolute bottom-0 left-0 p-2 text-white">
+                    <h3 class="font-bold text-sm">动物</h3>
+                    <p class="text-xs">12个单词</p>
+                </div>
+                <div class="absolute top-2 right-2 bg-yellow-400 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="text-xs font-bold">8/12</span>
+                </div>
+            </div>
+            
+            <div class="rounded-card overflow-hidden relative h-28">
+                <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=320" alt="水果" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-pink-900 to-transparent opacity-70"></div>
+                <div class="absolute bottom-0 left-0 p-2 text-white">
+                    <h3 class="font-bold text-sm">水果</h3>
+                    <p class="text-xs">8个单词</p>
+                </div>
+                <div class="absolute top-2 right-2 bg-yellow-400 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="text-xs font-bold">6/8</span>
+                </div>
+            </div>
+            
+            <div class="rounded-card overflow-hidden relative h-28">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=320" alt="颜色" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-green-900 to-transparent opacity-70"></div>
+                <div class="absolute bottom-0 left-0 p-2 text-white">
+                    <h3 class="font-bold text-sm">颜色</h3>
+                    <p class="text-xs">10个单词</p>
+                </div>
+                <div class="absolute top-2 right-2 bg-yellow-400 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="text-xs font-bold">0/10</span>
+                </div>
+            </div>
+            
+            <div class="rounded-card overflow-hidden relative h-28">
+                <img src="https://images.unsplash.com/photo-1535572290543-960a8046f5af?q=80&w=320" alt="数字" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-purple-900 to-transparent opacity-70"></div>
+                <div class="absolute bottom-0 left-0 p-2 text-white">
+                    <h3 class="font-bold text-sm">数字</h3>
+                    <p class="text-xs">20个单词</p>
+                </div>
+                <div class="absolute top-2 right-2 bg-yellow-400 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="text-xs font-bold">0/20</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 单词学习方式 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">学习方式</h2>
+        
+        <div class="grid grid-cols-2 gap-3 mb-16">
+            <div class="rounded-card p-3 bg-pink-50 border-2 border-pink-300 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center mb-1">
+                    <i class="fas fa-images text-white text-sm"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-800 mb-1">图卡学习</span>
+                <p class="text-xs text-gray-500 text-center">通过图片记忆单词</p>
+            </div>
+            
+            <div class="rounded-card p-3 bg-purple-50 border-2 border-purple-300 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center mb-1">
+                    <i class="fas fa-volume-up text-white text-sm"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-800 mb-1">发音练习</span>
+                <p class="text-xs text-gray-500 text-center">跟读学习正确发音</p>
+            </div>
+            
+            <div class="rounded-card p-3 bg-yellow-50 border-2 border-yellow-300 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mb-1">
+                    <i class="fas fa-gamepad text-white text-sm"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-800 mb-1">游戏配对</span>
+                <p class="text-xs text-gray-500 text-center">通过游戏记忆单词</p>
+            </div>
+            
+            <div class="rounded-card p-3 bg-green-50 border-2 border-green-300 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center mb-1">
+                    <i class="fas fa-check-double text-white text-sm"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-800 mb-1">单词测试</span>
+                <p class="text-xs text-gray-500 text-center">检验学习成果</p>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="nav-container">
+            <div class="nav-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); width: 100%;">
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>首页</span>
+                </div>
+                <div class="nav-item active" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-book nav-icon"></i>
+                    <span>单词</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-gamepad nav-icon"></i>
+                    <span>游戏</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-music nav-icon"></i>
+                    <span>儿歌</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

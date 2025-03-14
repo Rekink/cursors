@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宝贝英语 - 家长控制</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container bg-gradient-to-b from-blue-50 to-white">
+        <!-- 顶部导航 -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold text-blue-700">家长控制</h1>
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-bell text-blue-500 text-sm"></i>
+            </div>
+        </div>
+
+        <!-- 孩子信息 -->
+        <div class="rounded-card bg-white p-3 mb-4 shadow-sm">
+            <div class="flex items-center">
+                <div class="w-14 h-14 rounded-full overflow-hidden mr-3">
+                    <img src="https://images.unsplash.com/photo-1595601827380-a3f606ea4fba?q=80&w=100" alt="孩子头像" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-base font-semibold text-gray-800">小明</h2>
+                    <p class="text-xs text-gray-500">5岁 · 学习英语20天</p>
+                    <div class="mt-1 flex items-center">
+                        <span class="text-xs text-gray-700 mr-2">总学习时长: 8小时45分钟</span>
+                        <i class="fas fa-award text-yellow-400 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习数据 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">学习数据</h2>
+        
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="rounded-card bg-indigo-100 p-3 flex flex-col items-center justify-center">
+                <span class="text-indigo-600 font-bold text-lg">145</span>
+                <p class="text-xs text-indigo-800 text-center">已学单词</p>
+            </div>
+            <div class="rounded-card bg-green-100 p-3 flex flex-col items-center justify-center">
+                <span class="text-green-600 font-bold text-lg">12</span>
+                <p class="text-xs text-green-800 text-center">完成故事</p>
+            </div>
+            <div class="rounded-card bg-purple-100 p-3 flex flex-col items-center justify-center">
+                <span class="text-purple-600 font-bold text-lg">8</span>
+                <p class="text-xs text-purple-800 text-center">游戏次数</p>
+            </div>
+        </div>
+        
+        <!-- 学习进展 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">学习进展</h2>
+        
+        <div class="rounded-card p-3 mb-4 bg-white">
+            <h3 class="text-sm font-medium text-gray-800 mb-2">本周学习时长 (小时)</h3>
+            
+            <div class="flex items-end h-32 justify-between mb-1">
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-200 rounded-t" style="height: 20%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周一</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-300 rounded-t" style="height: 40%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周二</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-400 rounded-t" style="height: 80%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周三</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-500 rounded-t" style="height: 60%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周四</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-600 rounded-t" style="height: 30%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周五</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-700 rounded-t" style="height: 70%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周六</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-6 bg-blue-800 rounded-t" style="height: 50%"></div>
+                    <span class="text-xs text-gray-500 mt-1">周日</span>
+                </div>
+            </div>
+            
+            <div class="flex justify-between text-xs text-gray-500">
+                <span>平均每天: 45分钟</span>
+                <span>总计: 5小时15分钟</span>
+            </div>
+        </div>
+
+        <!-- 最近学习内容 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">最近学习内容</h2>
+        
+        <div class="space-y-3 mb-4">
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-12 h-12 bg-yellow-100 flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-book text-yellow-500 text-sm"></i>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-medium text-gray-800 text-xs">动物单词</h3>
+                        <span class="text-xs text-gray-500">今天</span>
+                    </div>
+                    <p class="text-xs text-gray-500">学习了8个新单词</p>
+                    <div class="mt-1 w-full bg-gray-200 rounded-full h-1.5">
+                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-12 h-12 bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-music text-green-500 text-sm"></i>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-medium text-gray-800 text-xs">ABC Song</h3>
+                        <span class="text-xs text-gray-500">昨天</span>
+                    </div>
+                    <p class="text-xs text-gray-500">听了2遍，跟唱了1遍</p>
+                    <div class="mt-1 w-full bg-gray-200 rounded-full h-1.5">
+                        <div class="bg-green-500 h-1.5 rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-card bg-white overflow-hidden flex">
+                <div class="w-12 h-12 bg-purple-100 flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-gamepad text-purple-500 text-sm"></i>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-medium text-gray-800 text-xs">单词配对游戏</h3>
+                        <span class="text-xs text-gray-500">3天前</span>
+                    </div>
+                    <p class="text-xs text-gray-500">完成了2轮，正确率85%</p>
+                    <div class="mt-1 w-full bg-gray-200 rounded-full h-1.5">
+                        <div class="bg-purple-500 h-1.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 家长控制选项 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">家长控制</h2>
+        
+        <div class="rounded-card p-3 mb-16 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-clock text-blue-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">使用时间限制</h3>
+                        <p class="text-xs text-gray-500">每天最多使用时间</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-xs text-gray-700 mr-2">1小时</span>
+                    <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-calendar-alt text-blue-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">学习计划</h3>
+                        <p class="text-xs text-gray-500">设置每周学习目标</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-xs text-gray-700 mr-2">已设置</span>
+                    <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-bell text-blue-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">学习提醒</h3>
+                        <p class="text-xs text-gray-500">设置每日提醒时间</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-xs text-gray-700 mr-2">每天18:00</span>
+                    <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-envelope text-blue-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">周报告</h3>
+                        <p class="text-xs text-gray-500">每周学习情况总结</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-xs text-gray-700 mr-2">已开启</span>
+                    <i class="fas fa-toggle-on text-blue-500 text-sm"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="nav-container">
+            <div class="nav-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); width: 100%;">
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-book nav-icon"></i>
+                    <span>单词</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-gamepad nav-icon"></i>
+                    <span>游戏</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-music nav-icon"></i>
+                    <span>儿歌</span>
+                </div>
+                <div class="nav-item active" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

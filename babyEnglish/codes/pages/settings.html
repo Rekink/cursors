@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宝贝英语 - 设置</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container bg-gradient-to-b from-gray-50 to-white">
+        <!-- 顶部导航 -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold text-gray-700">设置</h1>
+            <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
+                <i class="fas fa-question-circle text-gray-500 text-sm"></i>
+            </div>
+        </div>
+
+        <!-- 用户信息 -->
+        <div class="rounded-card bg-white p-3 mb-4 shadow-sm">
+            <div class="flex items-center">
+                <div class="w-14 h-14 rounded-full overflow-hidden mr-3">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100" alt="用户头像" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-base font-semibold text-gray-800">妈妈账号</h2>
+                    <p class="text-xs text-gray-500">家长账号 · 管理员</p>
+                </div>
+                <button class="text-xs bg-gray-200 px-2 py-1 rounded-full text-gray-700">
+                    编辑
+                </button>
+            </div>
+        </div>
+
+        <!-- 帐户设置 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">帐户</h2>
+        
+        <div class="rounded-card p-0 mb-4 bg-white overflow-hidden">
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-child text-blue-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">儿童资料</h3>
+                        <p class="text-xs text-gray-500">管理孩子的个人信息</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-lock text-purple-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">密码与安全</h3>
+                        <p class="text-xs text-gray-500">修改密码和安全设置</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-user-friends text-red-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">家长监控设置</h3>
+                        <p class="text-xs text-gray-500">添加其他家长监控账号</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+        </div>
+
+        <!-- 通用设置 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">通用</h2>
+        
+        <div class="rounded-card p-0 mb-4 bg-white overflow-hidden">
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-globe text-green-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">语言</h3>
+                        <p class="text-xs text-gray-500">简体中文</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-volume-up text-indigo-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">声音</h3>
+                        <p class="text-xs text-gray-500">控制应用内音量和音效</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-bell text-yellow-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">通知</h3>
+                        <p class="text-xs text-gray-500">管理提醒和通知设置</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-paint-brush text-pink-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">界面主题</h3>
+                        <p class="text-xs text-gray-500">深色/浅色模式切换</p>
+                    </div>
+                </div>
+                <div class="relative inline-block w-10 align-middle select-none">
+                    <input type="checkbox" name="toggle" id="theme-toggle" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                    <label for="theme-toggle" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 应用设置 -->
+        <h2 class="text-base font-semibold mb-3 text-gray-800">应用</h2>
+        
+        <div class="rounded-card p-0 mb-16 bg-white overflow-hidden">
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-cloud-download-alt text-orange-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">离线课程</h3>
+                        <p class="text-xs text-gray-500">管理已下载的学习资料</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-database text-teal-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">清除缓存</h3>
+                        <p class="text-xs text-gray-500">释放设备存储空间</p>
+                    </div>
+                </div>
+                <span class="text-xs text-gray-500">58.2MB</span>
+            </div>
+            
+            <div class="p-3 border-b border-gray-100 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-info-circle text-gray-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-gray-800">关于应用</h3>
+                        <p class="text-xs text-gray-500">版本 1.2.3</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+            </div>
+            
+            <div class="p-3 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                        <i class="fas fa-sign-out-alt text-red-500 text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-medium text-text-red-800">退出登录</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="nav-container">
+            <div class="nav-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); width: 100%;">
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-book nav-icon"></i>
+                    <span>单词</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-gamepad nav-icon"></i>
+                    <span>游戏</span>
+                </div>
+                <div class="nav-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-music nav-icon"></i>
+                    <span>儿歌</span>
+                </div>
+                <div class="nav-item active" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>我的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #4299e1;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #4299e1;
+        }
+    </style>
+</body>
+</html> 
