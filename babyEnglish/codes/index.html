@@ -10,21 +10,18 @@
             background-color: #f8f9fa;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            padding: 2rem;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             width: 100%;
-            max-width: 1200px;
-            padding: 1rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
         .phone-container {
             width: 375px;
@@ -35,6 +32,7 @@
             box-shadow: 0 30px 60px rgba(0,0,0,0.12), 0 15px 20px rgba(0,0,0,0.10);
             background-color: #000;
             padding: 10px;
+            margin: 0 auto;
         }
         .screen {
             width: 100%;
@@ -67,151 +65,156 @@
             border-radius: 3px;
             z-index: 10;
         }
+        .page-title {
+            background: #4F46E5;
+            color: white;
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 1.0rem;
+            box-shadow: 0 2px 4px rgba(79, 70, 229, 0.1);
+        }
         iframe {
             width: 100%;
             height: 100%;
             border: none;
-            overflow: auto;
         }
-        .page-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-            max-width: 600px;
-        }
-        .page-button {
-            padding: 8px 15px;
-            background-color: #6366F1;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-            border: none;
-        }
-        .page-button:hover {
-            background-color: #4F46E5;
-        }
-        
-        /* 导航栏的直接样式确保在iframe中正确显示 */
-        .nav-fix {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 2px;
-            width: 100%;
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 500px) {
-            .phone-container {
-                width: 320px;
-                height: 690px;
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
             }
-            .notch {
-                width: 130px;
-                height: 25px;
-            }
-            .home-indicator {
-                width: 100px;
-            }
-            .page-buttons {
-                gap: 6px;
-            }
-            .page-button {
-                padding: 6px 12px;
-                font-size: 13px;
+            .pages-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-3xl font-bold text-center text-indigo-600 mb-4">宝贝英语 - 高保真原型</h1>
+        <h1 class="text-3xl font-bold text-center text-indigo-600 mb-8">宝贝英语 - iPhone 15 预览</h1>
         
-        <div class="page-buttons">
-            <button class="page-button" onclick="changePage('pages/home.html')">首页</button>
-            <button class="page-button" onclick="changePage('pages/words.html')">单词学习</button>
-            <button class="page-button" onclick="changePage('pages/games.html')">互动游戏</button>
-            <button class="page-button" onclick="changePage('pages/stories.html')">儿歌故事</button>
-            <button class="page-button" onclick="changePage('pages/parent.html')">家长控制</button>
-            <button class="page-button" onclick="changePage('pages/settings.html')">设置</button>
-        </div>
-        
-        <div class="phone-container">
-            <div class="notch"></div>
-            <div class="screen">
-                <iframe id="content-frame" src="pages/home.html" frameborder="0"></iframe>
+        <div class="pages-grid">
+            <div>
+                <div class="page-title">首页</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/home.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
             </div>
-            <div class="home-indicator"></div>
+            
+            <div>
+                <div class="page-title">单词学习</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/words.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="page-title">互动游戏</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/games.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="page-title">儿歌故事</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/stories.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="page-title">家长控制</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/parent.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="page-title">设置</div>
+                <div class="phone-container">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <iframe src="pages/settings.html" frameborder="0"></iframe>
+                    </div>
+                    <div class="home-indicator"></div>
+                </div>
+            </div>
         </div>
-        
-        <p class="mt-4 text-gray-500 text-sm text-center">此原型展示了婴幼儿学前英语应用的UI设计和交互，使用iPhone 15模拟设计。</p>
     </div>
     
     <script>
-        function changePage(url) {
-            document.getElementById('content-frame').src = url;
-        }
-        
-        // 确保iframe内容正确加载和显示
         window.addEventListener('load', function() {
-            const iframe = document.getElementById('content-frame');
-            iframe.onload = function() {
-                try {
-                    // 尝试设置iframe内容，并确保可以正确滚动
-                    if (iframe.contentWindow && iframe.contentWindow.document && iframe.contentWindow.document.body) {
-                        iframe.contentWindow.document.body.style.overflowX = 'hidden';
-                        iframe.contentWindow.document.body.style.overflowY = 'auto';
-                        
-                        // 确保iframe内部导航条可见
-                        const navElements = iframe.contentWindow.document.querySelectorAll('.nav-container');
-                        if (navElements.length > 0) {
-                            // 设置导航条样式确保可见
-                            navElements.forEach(nav => {
-                                nav.style.position = 'fixed';
-                                nav.style.bottom = '0';
-                                nav.style.left = '0';
-                                nav.style.right = '0';
-                                nav.style.zIndex = '1000';
-                                
-                                // 查找内部的grid元素并确保其正确布局
-                                const gridDiv = nav.querySelector('div');
-                                if (gridDiv) {
-                                    gridDiv.style.display = 'grid';
-                                    gridDiv.style.gridTemplateColumns = 'repeat(5, 1fr)';
-                                    gridDiv.style.gap = '2px';
-                                    gridDiv.style.width = '100%';
-                                    gridDiv.classList.add('nav-fix');
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                iframe.onload = function() {
+                    try {
+                        if (iframe.contentWindow && iframe.contentWindow.document && iframe.contentWindow.document.body) {
+                            iframe.contentWindow.document.body.style.overflowX = 'hidden';
+                            iframe.contentWindow.document.body.style.overflowY = 'auto';
+                            
+                            const navElements = iframe.contentWindow.document.querySelectorAll('.nav-container');
+                            if (navElements.length > 0) {
+                                navElements.forEach(nav => {
+                                    nav.style.position = 'fixed';
+                                    nav.style.bottom = '0';
+                                    nav.style.left = '0';
+                                    nav.style.right = '0';
+                                    nav.style.zIndex = '1000';
                                     
-                                    // 确保每个导航项的布局
-                                    const navItems = gridDiv.querySelectorAll('.nav-item');
-                                    navItems.forEach(item => {
-                                        item.style.display = 'flex';
-                                        item.style.flexDirection = 'column';
-                                        item.style.alignItems = 'center';
-                                        item.style.justifyContent = 'center';
-                                        item.style.padding = '4px 0';
-                                        item.style.fontSize = '10px';
+                                    const gridDiv = nav.querySelector('div');
+                                    if (gridDiv) {
+                                        gridDiv.style.display = 'grid';
+                                        gridDiv.style.gridTemplateColumns = 'repeat(5, 1fr)';
+                                        gridDiv.style.gap = '2px';
+                                        gridDiv.style.width = '100%';
+                                        gridDiv.classList.add('nav-fix');
                                         
-                                        // 确保图标与文字的排列
-                                        const icon = item.querySelector('i');
-                                        if (icon) {
-                                            icon.style.marginBottom = '1px';
-                                            icon.style.height = '18px';
-                                            icon.style.width = '18px';
-                                        }
-                                    });
-                                }
-                            });
+                                        const navItems = gridDiv.querySelectorAll('.nav-item');
+                                        navItems.forEach(item => {
+                                            item.style.display = 'flex';
+                                            item.style.flexDirection = 'column';
+                                            item.style.alignItems = 'center';
+                                            item.style.justifyContent = 'center';
+                                            item.style.padding = '4px 0';
+                                            item.style.fontSize = '10px';
+                                            
+                                            const icon = item.querySelector('i');
+                                            if (icon) {
+                                                icon.style.marginBottom = '1px';
+                                                icon.style.height = '18px';
+                                                icon.style.width = '18px';
+                                            }
+                                        });
+                                    }
+                                });
+                            }
                         }
+                    } catch (e) {
+                        console.log('无法访问iframe内容:', e);
                     }
-                } catch (e) {
-                    console.log('无法访问iframe内容:', e);
-                }
-            };
+                };
+            });
         });
     </script>
 </body>
